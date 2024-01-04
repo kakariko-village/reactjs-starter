@@ -20,6 +20,11 @@ export const routes: Route[] = [
     path: '/about',
     element: import('./pages/AboutPage').then(({ AboutPage }) => AboutPage),
   },
+  {
+    label: 'Universities',
+    path: '/universities',
+    element: import('./pages/UniversitiesPage').then(({ UniversitiesPage }) => UniversitiesPage),
+  },
 ]
 
 const router = createBrowserRouter([
